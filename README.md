@@ -13,4 +13,4 @@ We aim other developers comfortability on using the plugin which means **develop
 **encryption with ZeroKnowledge**
 
 #  Architecture 🏗️💡!
-[ghostPay 👻](https://github.com/melkecelioglu/ghostPay/assets/67334822/367bdaef-6109-4c91-b9ad-73c56af6ee22)
+[ghostPay 👻](https://github.com/melkecelioglu/ghostPay/assets/67334822/367bdaef-6109-4c91-b9ad-73c56af6ee22) 
