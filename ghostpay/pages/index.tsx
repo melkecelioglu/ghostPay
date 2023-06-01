@@ -1,3 +1,20 @@
+import Link from 'next/link'
+import type { AppProps } from 'next/app'
+
+export default function Home(props:AppProps){
+  return(
+    <div>
+      <h1> Welcome to GhostPay</h1>
+      <p> Try us to create payment schedule with crypto </p>
+      <p> To Sign Up: <Link href="/signup"> Sign Up</Link> </p> 
+      <p> To Sign In: <Link href="/signin"> Sign In</Link> </p>
+    </div>
+  )
+}
+
+
+/*
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
@@ -116,3 +133,6 @@ export default function Home() {
     </main>
   )
 }
+
+
+*/
