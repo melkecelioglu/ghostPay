@@ -10,6 +10,7 @@ npm rm -rf node_modules
 npm rm package-lock.json
 npm install
 npm install react react-dom next
+
 npm run dev
 # or
 yarn dev
