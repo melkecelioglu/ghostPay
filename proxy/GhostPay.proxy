@@ -21,4 +21,9 @@ contract GhostPayProxy {
     function checkBalance(address _user) public view returns(uint) {
         return ghostPay.checkBalance(_user);
     }
+    function updateSubscriptionEndTime(uint _packageId, address _user, uint _endTime) public {
+            require(msg.sender == address(ghostPay), "Only GhostPay contract can call this function");
+            ghostPay.updateSubscriptionEndTime(_packageId, _user, _endTime);
+    }
+
 }
