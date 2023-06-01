@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "./GhostPay.sol";
+
+contract GhostPayProxy {
+    GhostPay private ghostPay;
+
+    constructor(GhostPay _ghostPay) {
+        ghostPay = _ghostPay;
+    }
+
+    function subscribe(uint _packageId) public {
+        ghostPay.subscribe(_packageId);
+    }
+
+    function viewIsSubscribed(address _user, uint _packageId) public view returns(bool) {
+        return ghostPay.viewIsSubscribed(_user, _packageId);
+    }
+
+    function checkBalance(address _user) public view returns(uint) {
+        return ghostPay.checkBalance(_user);
+    }
+}
