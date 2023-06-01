@@ -8,7 +8,6 @@ First, run the development server:
 npm install
 npm install react react-dom next
 npm run dev
-npm run dev
 # or
 yarn dev
 # or
