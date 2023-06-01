@@ -5,6 +5,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+npm cache clean --force
+npm rm -rf node_modules 
+npm rm package-lock.json
 npm install
 npm install react react-dom next
 npm run dev
