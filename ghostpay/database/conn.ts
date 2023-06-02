@@ -1,11 +1,13 @@
 // import mongoose from "mongoose";
-// //import data from 'data.json';
+// import data from 'data.json';
 
-// const connectMongo = async () => {
+// export default const connectMongo = async () => 
+{
 //     try{
 //         console.log("TRY CONNECT2");
 //         const {connection} = await mongoose.connect(process.env.NEXT_PUBLIC_MONGO_URI); // "mongodb://localhost:27017"
-//         if(connection.readyState == 1){
+//         if(connection.readyState == 1)
+           {
 //             console.log("Database Connected");
 //         }
 //     }
@@ -14,7 +16,6 @@
 //     }
     
 // }
-// export default connectMongo;
 
 
 // import { MongoClient } from 'mongodb';
@@ -34,8 +35,6 @@
 // const middleware = nextConnect();
 
 // middleware.use(database);
-
-// export default middleware;
 
 
 import { MongoClient } from 'mongodb'
