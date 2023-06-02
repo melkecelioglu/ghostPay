@@ -38,7 +38,28 @@
 
 
 import { MongoClient } from 'mongodb'
+import { NextResponse } from "next/server";
+import type { NextRequest, NextFetchEvent } from "next/server";
+import { createEdgeRouter } from "next-connect";
 
+const router = createEdgeRouter<NextRequest, NextFetchEvent>();
+
+router.use(async (request, event, next) => {
+  return next();
+});
+
+router.get("", (request) => {
+  return NextResponse.redirect(new URL("", request.url));
+});
+
+router.use("", (request) => {
+  if (!isAuthenticated(request)) {
+    return NextResponse.redirect(new URL("", request.url));
+  }
+  return NextResponse.next();
+});
+
+                      
 const uri2= "mongodb+srv://mbkara:admin13@cluster0.yxbalpx.mongodb.net/?retryWrites=true&w=majority"
 
 if (!uri2 /*"mongodb://localhost:27017"*/ /*!process.env.MONGODB_URI*/) {
