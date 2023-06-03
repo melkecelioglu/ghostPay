@@ -39,8 +39,10 @@ export default async function handler(  req: NextApiRequest, res: NextApiRespons
       .digest("hex");
     body.password = passhash;
     
+
     // Found the name.
     // Sends a HTTP success code
     const post = collect.insertOne(body);
     res.status(200).json({ data: `${body.name} ${body.surname} ${body.mail} ${body.metamaskid}` });
+
   }
