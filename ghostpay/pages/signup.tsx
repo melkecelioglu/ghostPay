@@ -36,7 +36,7 @@ export default function Signup(props:AppProps){
   return(
     <div>
       <h1> Sign Up to GhostPay</h1>
-      <form action="/api/form" method="post" >
+      <form action="/api/signupForm" method="post" >
         
         <label htmlFor="name">Name: </label>
         <input type="text" id="name" name="name" /> 
@@ -50,6 +50,11 @@ export default function Signup(props:AppProps){
 
         <label htmlFor="mail">Mail: </label>
         <input type="email" id="mail" name="mail" />
+
+        <br></br>
+
+        <label htmlFor="password">Password: </label>
+        <input type="text" id="password" name="password" />
 
         <br></br>
 

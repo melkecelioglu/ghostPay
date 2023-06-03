@@ -42,7 +42,7 @@ import { MongoClient } from 'mongodb'
 
 const uri2= "mongodb+srv://mbkara:admin13@cluster0.yxbalpx.mongodb.net/?retryWrites=true&w=majority"
 
-if (!uri2 /*"mongodb://localhost:27017"*/ /*!process.env.MONGODB_URI*/) {
+if (!uri2) {
   throw new Error('Invalid environment variable: "MONGODB_URI"')
 }
 
