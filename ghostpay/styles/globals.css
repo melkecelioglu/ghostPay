@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 10;
   list-style: none;
 }
 
@@ -9,11 +9,11 @@ html {
   /*  background: linear-gradient(to right, #ff0000, #0000ff); */
   background: radial-gradient(
     circle,
-    rgba(0, 212, 255, 1) 29%,
-    rgba(9, 9, 121, 1) 31%,
+    rgb(36, 146, 166) 29%,
+    rgb(131, 131, 221) 31%,
     rgba(0, 212, 255, 1) 52%,
-    rgba(2, 0, 36, 1) 76%,
-    rgba(0, 212, 255, 1) 89%,
+    rgb(190, 190, 198) 76%,
+    rgb(170, 223, 234) 89%,
     rgba(0, 212, 255, 1) 92%,
     rgba(0, 212, 255, 1) 97%
   );

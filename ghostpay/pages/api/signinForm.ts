@@ -42,8 +42,14 @@ export default async function handler(  req: NextApiRequest, res: NextApiRespons
         mail: body.mail,
       });
     
-    if (!customer || customer.password ==passhash){
+    if(!customer){
+        return res.status(400).json({ data: 'Wrong Mail' });
+    }
+    if (customer.password ==passhash){
         res.status(200).json({ data: `Successful login, Following another page` });
+    }
+    else{
+        return res.status(400).json({ data: 'Wrong Password' });
     } 
 
     
