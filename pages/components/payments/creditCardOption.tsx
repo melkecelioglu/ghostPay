@@ -37,11 +37,6 @@ const CreditCardOption: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    console.log("Card Number:", cardNumber);
-    console.log("Expiry Date:", expiryDate);
-    console.log("CVV:", cvv);
-
     setCardNumber("");
     setExpiryDate("");
     setCvv("");

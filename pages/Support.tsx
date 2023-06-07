@@ -9,13 +9,14 @@ import {
 import Link from "next/link";
 import { BiSupport } from "react-icons/bi";
 import Image from "next/image";
+import logo from "src/images/logo.png";
 
 const Sidebar: React.FC = () => {
   return (
     <div className="h-screen w-56 bg-gray-800 fixed top-0 left-0 overflow-y-auto overflow-x-hidden">
-      <div className="flex flex-col items-center justify-center h-14 bg-gray-900 text-white">
+      <div className="flex flex-col items-center justify-center h-14 bg-slate-500 text-white">
         <span className="text-xl font-bold">
-          <img src="src/images/logo.png" alt="Logo" className="h-8 w-8 mr-2" />
+          <Image src={logo} width={200} height={100} alt="Logo" />
         </span>
       </div>
       <div className="flex flex-col items-center mt-8">
@@ -78,7 +79,7 @@ const Support: React.FC = () => {
     <div className="flex">
       <Sidebar />
 
-      <div className="flex flex-col items-center ml-80 p-20">
+      <div className="flex flex-col items-center ml-60 p-20">
         <div className="bg-gray-100 rounded-lg p-4 mb-4">
           <h1 className="bg-gray-400 text-white px-4 py-2 mb-4 rounded-t-lg">
             Contact Support

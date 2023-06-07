@@ -14,6 +14,7 @@ import {
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, polygon, optimism, arbitrum, goerli } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import "tailwindcss/tailwind.css";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [

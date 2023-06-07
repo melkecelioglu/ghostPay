@@ -24,19 +24,19 @@ const EditPaymentMethodPage: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <button
-          className="bg-spotify-green hover:bg-spotify-green-dark text-white font-bold py-4 px-8 rounded border border-transparent"
+          className=" bg-green-600 hover:bg-spotify-green-dark text-white font-bold py-4 px-8 rounded border border-transparent"
           onClick={() => handleButtonClick("creditCardOption")}
         >
           Credit or Debit Card
         </button>
         <button
-          className="bg-spotify-blue hover:bg-spotify-blue-dark text-white font-bold py-4 px-8 rounded border border-transparent"
+          className="bg-green-600 hover:bg-spotify-blue-dark text-white font-bold py-4 px-8 rounded border border-transparent"
           onClick={() => handleButtonClick("mobilePaymentOption")}
         >
           Mobile Payment
         </button>
         <button
-          className="bg-spotify-yellow hover:bg-spotify-yellow-dark text-white font-bold py-4 px-8 rounded border border-transparent"
+          className="bg-blue-400 hover:bg-spotify-yellow-dark text-white font-bold py-4 px-8 rounded border border-transparent"
           onClick={() => handleButtonClick("ghostPayOption")}
         >
           ghostPay 👻

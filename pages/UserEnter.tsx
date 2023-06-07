@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import ButtonPage from "./ButtonPage";
+import logo from "/src/images/logo.png";
 
 const UserEntryPage: React.FC = () => {
   const [loginUsername, setLoginUsername] = useState("");
@@ -38,13 +39,7 @@ const UserEntryPage: React.FC = () => {
     <div className="flex justify-center items-center h-screen">
       <div className="w-96 bg-white rounded-lg p-8 shadow-md">
         <div className="flex items-center justify-center mb-4">
-          <Image
-            src="/src/images/logo.png"
-            alt="Logo"
-            className="w-12 h-12 mr-2"
-            width={12}
-            height={12}
-          />
+          <Image src={logo} width={200} height={100} alt="Logo" />
         </div>
         <div>
           <ButtonPage />
