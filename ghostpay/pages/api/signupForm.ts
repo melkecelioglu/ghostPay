@@ -20,10 +20,8 @@ export default async function handler(
 
   if (
     !body.name ||
-    !body.surname ||
     !body.mail ||
-    !body.password ||
-    !body.metamaskid
+    !body.password
   ) {
     return res.status(400).json({ data: "Some Data is Missing" });
   }
