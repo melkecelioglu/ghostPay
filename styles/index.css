@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-spotify-green {
+  background-color: #1db954;
+}
+
+.bg-spotify-green-dark {
+  background-color: #1aa34a;
+}
+
+.bg-spotify-blue {
+  background-color: #1d72e5;
+}
+
+.bg-spotify-blue-dark {
+  background-color: #1852b1;
+}
+
+.bg-spotify-yellow {
+  background-color: #ffda2e;
+}
+
+.bg-spotify-yellow-dark {
+  background-color: #e9c51f;
+}
