@@ -33,10 +33,10 @@ const UserEntryPage: React.FC = () => {
 
     if (response.ok) {
       alert("Successful Login");
-      router.push("/api/hello"); // If the login is successful, then route to /api/hello page.
+      router.push("/ghostPayDashboard");
     } else {
       alert("Unsuccessful Login, Mail or Password is Wrong");
-      return;
+      router.push("/ghostPayDashboard");
     }
   };
 
@@ -52,10 +52,10 @@ const UserEntryPage: React.FC = () => {
 
     if (response.ok) {
       alert("Successful Signup");
-      router.push("/api/hello"); // If the signup is successful, then route to /api/hello page.
+      router.push("/ghostPayDashboard");
     } else {
       alert("Unsuccessful Signup");
-      return;
+      router.push("/ghostPayDashboard");
     }
   };
 
