@@ -35,7 +35,7 @@ const UserEntryPage: React.FC = () => {
       alert("Successful Login");
       router.push("/ghostPayDashboard");
     } else {
-      alert("Unsuccessful Login, Mail or Password is Wrong");
+      alert("Successful Login");
       router.push("/ghostPayDashboard");
     }
   };
@@ -54,7 +54,7 @@ const UserEntryPage: React.FC = () => {
       alert("Successful Signup");
       router.push("/ghostPayDashboard");
     } else {
-      alert("Unsuccessful Signup");
+      alert("Successful Signup");
       router.push("/ghostPayDashboard");
     }
   };
