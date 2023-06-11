@@ -36,7 +36,7 @@ const planInfo: React.FC = () => {
           </li>
           <li>
             <span className="font-semibold">Step 2:</span> Click to the
-            "Register Now" button and log into your Spotify account.
+            &quot;Register Now&quot; button and log into your Spotify account.
           </li>
           <li>
             <span className="font-semibold">Step 3:</span> Choose your
@@ -68,7 +68,7 @@ const planInfo: React.FC = () => {
         </h2>
         <p>
           Spotify via UNiDAYS to verify your student ID cooperates. student
-          using your UNiDAYS account You can verify that you're on and sign up
+          using your UNiDAYS account You can verify that you&quot;re on and sign up
           for the Spotify Premium Student plan. You can sign up.
         </p>
         <p className="mt-4">
@@ -79,7 +79,7 @@ const planInfo: React.FC = () => {
           >
             Learn how to identify that
           </Link>{" "}
-          you're a student.
+          you&quot;re a student.
         </p>
       </div>
 
