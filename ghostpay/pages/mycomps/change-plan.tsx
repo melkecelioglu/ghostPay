@@ -31,10 +31,12 @@ const SubscriptionChangePage: React.FC = () => {
             htmlFor="basic"
             className="ml-3 text-lg font-bold cursor-pointer"
           >
-            Basic Plan
+            Spotify Free
           </label>
-          <p className="text-gray-600 ml-6">Plan details</p>
-          <p className="text-green-500 ml-6">19.99 TL/month</p>
+          <p className="text-gray-600 ml-6">
+            Play shuffle listen with commercials.
+          </p>
+          <p className="text-green-500 ml-6">Free</p>
         </div>
 
         <div className="flex items-center mb-4">
@@ -50,10 +52,12 @@ const SubscriptionChangePage: React.FC = () => {
             htmlFor="premium"
             className="ml-3 text-lg font-bold cursor-pointer"
           >
-            Premium Plan
+            Premium Duo
           </label>
-          <p className="text-gray-600 ml-6">Plan details</p>
-          <p className="text-green-500 ml-6">29.99 TL/month</p>
+          <p className="text-gray-600 ml-6">
+            Two separate Premium accounts for two people living together.
+          </p>
+          <p className="text-green-500 ml-6">39.99 TL/month</p>
         </div>
 
         <div className="flex items-center mb-4">
@@ -71,8 +75,10 @@ const SubscriptionChangePage: React.FC = () => {
           >
             Family Plan
           </label>
-          <p className="text-gray-600 ml-6">Plan details</p>
-          <p className="text-green-500 ml-6">39.99 TL/month</p>
+          <p className="text-gray-600 ml-6">
+            6 separate Premium accounts for people living together.
+          </p>
+          <p className="text-green-500 ml-6">49.99 TL/month</p>
         </div>
       </div>
 

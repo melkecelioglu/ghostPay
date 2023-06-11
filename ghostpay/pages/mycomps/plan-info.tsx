@@ -54,7 +54,7 @@ const planInfo: React.FC = () => {
         <p className="mt-4">
           For more details, please{" "}
           <Link
-            href="https://support.spotify.com/en-en/article/premium-student/"
+            href="https://support.spotify.com/tr-tr/article/premium-student/"
             className="text-blue-500"
           >
             Visit the Spotify Student Premium Page.
@@ -74,7 +74,7 @@ const planInfo: React.FC = () => {
         <p className="mt-4">
           For more details, please{" "}
           <Link
-            href="https://support.spotify.com/en-en/article/premium-student/"
+            href="https://support.spotify.com/tr-tr/article/premium-student/"
             className="text-blue-500"
           >
             Learn how to identify that
@@ -92,7 +92,7 @@ const planInfo: React.FC = () => {
         <p className="mt-4">
           For more details, please{" "}
           <Link
-            href="https://support.spotify.com/en-en/article/premium-student/"
+            href="https://support.spotify.com/tr-tr/article/premium-student/"
             className="text-blue-500"
           >
             Frequently asked Questions

@@ -125,9 +125,9 @@ const DropdownList2: React.FC = () => {
 
 const PortfolioSection: React.FC = () => {
   const tokens = [
-    { name: "Token 1", price: "$100", balance: "10", icon: <FaBitcoin /> },
-    { name: "Token 2", price: "$200", balance: "20", icon: <FaEthereum /> },
-    { name: "Token 3", price: "$300", balance: "30", icon: <FaDollarSign /> },
+    { name: "Bitcoin", price: "$25651", balance: "10", icon: <FaBitcoin /> },
+    { name: "Ethereum", price: "$1553", balance: "20", icon: <FaEthereum /> },
+    { name: "USDT", price: "$1.001", balance: "30", icon: <FaDollarSign /> },
   ];
 
   const portfolioValue = tokens.reduce(
@@ -154,10 +154,13 @@ const PortfolioSection: React.FC = () => {
             </thead>
             <tbody>
               {tokens.map((token) => (
-                <tr key={token.name} className="border-b border-gray-200">
-                  <td className="flex items-center py-2">
+                <tr
+                  key={token.name}
+                  className="border-b text-center border-gray-200"
+                >
+                  <td className="flex items-center justify-center py-2">
                     <span className="mr-2">{token.icon}</span>
-                    {token.name}
+                    <span>{token.name}</span>
                   </td>
                   <td className="py-2">{token.price}</td>
                   <td className="py-2">{token.balance}</td>
