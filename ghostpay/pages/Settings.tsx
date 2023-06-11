@@ -126,7 +126,7 @@ const Settings: React.FC = () => {
       <div>
         <Sidebar />
       </div>
-      <div className="container mx-auto max-4x px-4 py-8 ml-60">
+      <div className="container mx-auto max-4x px-4 py-8 ml-60 max-w-5xl">
         <h1 className="text-3xl font-bold mb-6">Settings</h1>
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="mb-6">
@@ -138,14 +138,14 @@ const Settings: React.FC = () => {
                   type="text"
                   value={tempUsername}
                   onChange={handleUsernameChange}
-                  className="border rounded px-2 py-1"
+                  className="border rounded px-2 py-1 ml-2"
                 />
               ) : (
                 <input
                   type="text"
                   value={username}
                   onChange={handleUsernameChange}
-                  className="border rounded px-2 py-1"
+                  className="border rounded px-2 py-1 ml-2"
                 />
               )}
             </p>
@@ -156,7 +156,7 @@ const Settings: React.FC = () => {
                   type={showPassword ? "text" : "password"}
                   value={tempPassword}
                   onChange={handlePasswordChange}
-                  className="border rounded px-2 py-1"
+                  className="border rounded px-2 py-1 ml-2"
                 />
               ) : (
                 <>
@@ -165,14 +165,14 @@ const Settings: React.FC = () => {
                       type="text"
                       value={password}
                       readOnly
-                      className="border rounded px-2 py-1"
+                      className="border rounded px-2 py-1 ml-2"
                     />
                   ) : (
                     <input
                       type="password"
                       value={password}
                       readOnly
-                      className="border rounded px-2 py-1"
+                      className="border rounded px-2 py-1 ml-2"
                     />
                   )}
                 </>
@@ -191,14 +191,14 @@ const Settings: React.FC = () => {
                   type="email"
                   value={tempEmail}
                   onChange={handleEmailChange}
-                  className="border rounded px-2 py-1"
+                  className="border rounded px-2 py-1 ml-2"
                 />
               ) : (
                 <input
                   type="email"
                   value={email}
                   onChange={handleEmailChange}
-                  className="border rounded px-2 py-1"
+                  className="border rounded px-2 py-1 ml-2"
                 />
               )}
             </p>
@@ -214,13 +214,13 @@ const Settings: React.FC = () => {
             <div className="flex justify-end mt-4">
               <div className="mt-auto">
                 <button
-                  className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mr-2 ml-20"
+                  className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mr-2 ml-10"
                   onClick={handleConfirmChanges}
                 >
                   Confirm
                 </button>
                 <button
-                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded ml-30"
+                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded ml-10"
                   onClick={handleCancelChanges}
                 >
                   Cancel
@@ -229,6 +229,7 @@ const Settings: React.FC = () => {
             </div>
           )}
         </div>
+
         <div className="mt-8">
           <h2 className="text-lg font-bold mb-2">Transaction History</h2>
           <table className="w-full border-collapse">
