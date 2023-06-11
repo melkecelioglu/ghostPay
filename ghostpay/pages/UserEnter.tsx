@@ -110,7 +110,7 @@ const UserEntryPage: React.FC = () => {
         <div className="flex items-center justify-center mb-4">
           <Image src={logo} width={200} height={100} alt="Logo" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <ButtonPage />
         </div>
         {activeSection === "login" ? (
