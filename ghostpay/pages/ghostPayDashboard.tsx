@@ -65,7 +65,7 @@ const DropdownList1: React.FC = () => {
     <div className="relative inline-block ml-10">
       <Select
         value={options.find((option) => option.value === selectedOption)}
-        onChange={handleSelect}
+        onChange={() => handleSelect}
         options={options}
         className="text-base"
       />
@@ -115,7 +115,7 @@ const DropdownList2: React.FC = () => {
     <div className="relative inline-block ml-5">
       <Select
         value={options.find((option) => option.value === selectedOption)}
-        onChange={handleSelect}
+        onChange={() => handleSelect}
         options={options}
         className="text-base"
       />
