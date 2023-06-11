@@ -65,7 +65,7 @@ const DropdownList1: React.FC = () => {
     <div className="relative inline-block ml-10">
       <Select
         value={options.find((option) => option.value === selectedOption)}
-        onChange={handleSelect}
+        onChange={() => handleSelect}
         options={options}
         className="text-base"
       />
@@ -115,7 +115,7 @@ const DropdownList2: React.FC = () => {
     <div className="relative inline-block ml-5">
       <Select
         value={options.find((option) => option.value === selectedOption)}
-        onChange={handleSelect}
+        onChange={ () => handleSelect}
         options={options}
         className="text-base"
       />
@@ -187,23 +187,18 @@ const upcomingPaymentsData = [
 ];
 
 const UpcomingPayments: React.FC = () => {
-  const nearestDate = upcomingPaymentsData.reduce((nearest, payment) => {
-    const currentDate = new Date();
-    const paymentDate = new Date(payment.paymentDate);
-
-    if (!nearest || paymentDate < nearest) {
-      return paymentDate;
-    }
-    return nearest;
-  }, null);
-
+  // find nearest date from upcomingPaymentsData with reduce methdod
+  const nearestDate = upcomingPaymentsData.reduce((prev, current) => {
+    return prev.daysLeft < current.daysLeft ? prev : current;
+  }).daysLeft;
+ 
   return (
     <div className="flex justify-center mt-5">
       <div className="w-full max-w-3xl bg-white shadow-md rounded-lg overflow-hidden">
         <div className="bg-gray-200 px-4 py-3">
           <h2 className="text-lg font-bold">Upcoming Payments</h2>
           <span className="text-sm">
-            Nearest Date: {nearestDate?.toLocaleDateString()}
+            Nearest Date: {nearestDate?.toString()}
           </span>
         </div>
         <div className="px-4 py-2">
