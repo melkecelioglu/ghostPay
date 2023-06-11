@@ -15,7 +15,7 @@ const EditProfile: React.FC = () => {
     profileData.birthDate = birthDate;
     profileData.country = country;
 
-    router.push("/profile");
+    router.push("/Profile");
   };
 
   return (

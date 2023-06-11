@@ -57,7 +57,7 @@ const Profile: React.FC = () => {
             students.
           </p>
           <p>
-            <Link href="/plan-info" className="text-green-500">
+            <Link href="/mycomps/plan-info" className="text-green-500">
               Learn about your plan
             </Link>
           </p>

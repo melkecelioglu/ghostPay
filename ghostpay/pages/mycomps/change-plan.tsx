@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import router from "next/router";
 
 const SubscriptionChangePage: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState("");
@@ -8,7 +9,7 @@ const SubscriptionChangePage: React.FC = () => {
   };
 
   const handleConfirmSubscription = () => {
-    //router.push("/subscription-success");
+    router.push("/Profile");
   };
 
   return (
